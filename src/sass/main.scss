@@ -1,4 +1,30 @@
 // Global Setup
+$size-10: 1rem;
+$size-12: 1.2rem;
+$size-14: 1.4rem;
+$size-16: 1.6rem;
+$size-18: 1.8rem;
+$size-20: 2rem;
+$size-24: 2.4rem;
+$size-28: 2.8rem;
+$size-32: 3.2rem;
+$size-36: 3.6rem;
+$size-40: 4rem;
+$size-48: 4.8rem;
+
+$white: #ffffff;
+$black: #000000;
+$bg-color: #1E1D2B;
+$purple: #716FFC;
+$green: #29BB89;
+$yellow: #F8BC38;
+$orange: #F05945;
+$red: #EC4646;
+$input-card: #1E1D2B;
+$card: #1E1D2B;
+$text: #82838E;
+$sidebar: #2F3042;
+
 *,
 *::before,
 *::after {
@@ -16,6 +42,8 @@ html {
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
+  background: $bg-color;
+  color: $white;
 }
 
 body, input, textarea, button {
@@ -38,18 +66,18 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   width: 100%;
-  max-width: 1980px;
+  max-width: 1920px;
   height: 100vh;
+  margin: 0 auto;
 
-  .grid-container-1 {
+  .grid-container-img {
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
   }
 
-  .grid-container-2 {
+  .grid-container-room {
     height: 100%;
   }
 }
