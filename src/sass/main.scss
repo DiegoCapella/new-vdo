@@ -1,9 +1,12 @@
+// Global Setup
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -12,8 +15,25 @@ html {
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
+
+body, input, textarea, button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+// Global Setup End
 
 .grid-container {
   display: grid;
