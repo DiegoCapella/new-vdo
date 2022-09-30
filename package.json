@@ -1,0 +1,12 @@
+{
+  "name": "new-vdo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile:sass": "node-sass ./src/sass/main.scss ./src/styles/index.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
